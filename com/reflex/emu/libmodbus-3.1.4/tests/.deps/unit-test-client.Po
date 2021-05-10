@@ -1,0 +1,523 @@
+unit-test-client.o: unit-test-client.c ../config.h \
+ d:\gnat\2016\i686-pc-mingw32\include\stdio.h \
+ d:\gnat\2016\i686-pc-mingw32\include\crtdefs.h \
+ d:\gnat\2016\i686-pc-mingw32\include\_mingw.h \
+ d:\gnat\2016\i686-pc-mingw32\include\_mingw_mac.h \
+ d:\gnat\2016\i686-pc-mingw32\include\_mingw_secapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\vadefs.h \
+ d:\gnat\2016\i686-pc-mingw32\include\sdks/_mingw_directx.h \
+ d:\gnat\2016\i686-pc-mingw32\include\sdks/_mingw_ddk.h \
+ d:\gnat\2016\i686-pc-mingw32\include\_mingw_print_push.h \
+ d:\gnat\2016\i686-pc-mingw32\include\_mingw_off_t.h \
+ d:\gnat\2016\i686-pc-mingw32\include\swprintf.inl \
+ d:\gnat\2016\i686-pc-mingw32\include\sec_api\stdio_s.h \
+ d:\gnat\2016\i686-pc-mingw32\include\_mingw_print_pop.h \
+ d:\gnat\2016\i686-pc-mingw32\include\unistd.h \
+ d:\gnat\2016\i686-pc-mingw32\include\io.h \
+ d:\gnat\2016\i686-pc-mingw32\include\string.h \
+ d:\gnat\2016\i686-pc-mingw32\include\sec_api\string_s.h \
+ d:\gnat\2016\i686-pc-mingw32\include\sec_api\io_s.h \
+ d:\gnat\2016\i686-pc-mingw32\include\process.h \
+ d:\gnat\2016\i686-pc-mingw32\include\sys\types.h \
+ d:\gnat\2016\i686-pc-mingw32\include\getopt.h \
+ d:\gnat\2016\i686-pc-mingw32\include\pthread_unistd.h \
+ d:\gnat\2016\i686-pc-mingw32\include\stdlib.h \
+ d:\gnat\2016\lib\gcc\i686-pc-mingw32\4.9.4\include-fixed\limits.h \
+ d:\gnat\2016\lib\gcc\i686-pc-mingw32\4.9.4\include-fixed\syslimits.h \
+ d:\gnat\2016\i686-pc-mingw32\include\limits.h \
+ d:\gnat\2016\i686-pc-mingw32\include\sec_api\stdlib_s.h \
+ d:\gnat\2016\i686-pc-mingw32\include\malloc.h \
+ d:\gnat\2016\i686-pc-mingw32\include\errno.h ../src/modbus.h \
+ d:\gnat\2016\lib\gcc\i686-pc-mingw32\4.9.4\include\stdint.h \
+ d:\gnat\2016\i686-pc-mingw32\include\stdint.h \
+ d:\gnat\2016\lib\gcc\i686-pc-mingw32\4.9.4\include\stddef.h \
+ ../src/modbus-version.h ../src/modbus-tcp.h ../src/modbus.h \
+ d:\gnat\2016\i686-pc-mingw32\include\winsock2.h \
+ d:\gnat\2016\i686-pc-mingw32\include\_mingw_unicode.h \
+ d:\gnat\2016\i686-pc-mingw32\include\windows.h \
+ d:\gnat\2016\i686-pc-mingw32\include\sdkddkver.h \
+ d:\gnat\2016\i686-pc-mingw32\include\excpt.h \
+ d:\gnat\2016\lib\gcc\i686-pc-mingw32\4.9.4\include\stdarg.h \
+ d:\gnat\2016\i686-pc-mingw32\include\windef.h \
+ d:\gnat\2016\i686-pc-mingw32\include\minwindef.h \
+ d:\gnat\2016\i686-pc-mingw32\include\winapifamily.h \
+ d:\gnat\2016\i686-pc-mingw32\include\specstrings.h \
+ d:\gnat\2016\i686-pc-mingw32\include\sal.h \
+ d:\gnat\2016\i686-pc-mingw32\include\winnt.h \
+ d:\gnat\2016\i686-pc-mingw32\include\ctype.h \
+ d:\gnat\2016\i686-pc-mingw32\include\apiset.h \
+ d:\gnat\2016\i686-pc-mingw32\include\psdk_inc\intrin-impl.h \
+ d:\gnat\2016\i686-pc-mingw32\include\basetsd.h \
+ d:\gnat\2016\i686-pc-mingw32\include\guiddef.h \
+ d:\gnat\2016\i686-pc-mingw32\include\pshpack4.h \
+ d:\gnat\2016\i686-pc-mingw32\include\poppack.h \
+ d:\gnat\2016\i686-pc-mingw32\include\pshpack4.h \
+ d:\gnat\2016\i686-pc-mingw32\include\pshpack2.h \
+ d:\gnat\2016\i686-pc-mingw32\include\poppack.h \
+ d:\gnat\2016\i686-pc-mingw32\include\pshpack2.h \
+ d:\gnat\2016\i686-pc-mingw32\include\pshpack8.h \
+ d:\gnat\2016\i686-pc-mingw32\include\pshpack8.h \
+ d:\gnat\2016\i686-pc-mingw32\include\ktmtypes.h \
+ d:\gnat\2016\i686-pc-mingw32\include\winbase.h \
+ d:\gnat\2016\i686-pc-mingw32\include\apisetcconv.h \
+ d:\gnat\2016\i686-pc-mingw32\include\minwinbase.h \
+ d:\gnat\2016\i686-pc-mingw32\include\bemapiset.h \
+ d:\gnat\2016\i686-pc-mingw32\include\debugapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\errhandlingapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\fibersapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\fileapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\handleapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\heapapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\ioapiset.h \
+ d:\gnat\2016\i686-pc-mingw32\include\interlockedapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\jobapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\libloaderapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\memoryapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\namedpipeapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\namespaceapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\processenv.h \
+ d:\gnat\2016\i686-pc-mingw32\include\processthreadsapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\processtopologyapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\profileapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\realtimeapiset.h \
+ d:\gnat\2016\i686-pc-mingw32\include\securityappcontainer.h \
+ d:\gnat\2016\i686-pc-mingw32\include\securitybaseapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\synchapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\sysinfoapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\systemtopologyapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\threadpoolapiset.h \
+ d:\gnat\2016\i686-pc-mingw32\include\threadpoollegacyapiset.h \
+ d:\gnat\2016\i686-pc-mingw32\include\utilapiset.h \
+ d:\gnat\2016\i686-pc-mingw32\include\wow64apiset.h \
+ d:\gnat\2016\i686-pc-mingw32\include\winerror.h \
+ d:\gnat\2016\i686-pc-mingw32\include\fltwinerror.h \
+ d:\gnat\2016\i686-pc-mingw32\include\timezoneapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\wingdi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\pshpack1.h \
+ d:\gnat\2016\i686-pc-mingw32\include\winuser.h \
+ d:\gnat\2016\i686-pc-mingw32\include\tvout.h \
+ d:\gnat\2016\i686-pc-mingw32\include\winnls.h \
+ d:\gnat\2016\i686-pc-mingw32\include\datetimeapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\stringapiset.h \
+ d:\gnat\2016\i686-pc-mingw32\include\wincon.h \
+ d:\gnat\2016\i686-pc-mingw32\include\winver.h \
+ d:\gnat\2016\i686-pc-mingw32\include\winreg.h \
+ d:\gnat\2016\i686-pc-mingw32\include\reason.h \
+ d:\gnat\2016\i686-pc-mingw32\include\winnetwk.h \
+ d:\gnat\2016\i686-pc-mingw32\include\wnnc.h \
+ d:\gnat\2016\i686-pc-mingw32\include\virtdisk.h \
+ d:\gnat\2016\i686-pc-mingw32\include\cderr.h \
+ d:\gnat\2016\i686-pc-mingw32\include\dde.h \
+ d:\gnat\2016\i686-pc-mingw32\include\ddeml.h \
+ d:\gnat\2016\i686-pc-mingw32\include\dlgs.h \
+ d:\gnat\2016\i686-pc-mingw32\include\lzexpand.h \
+ d:\gnat\2016\i686-pc-mingw32\include\mmsystem.h \
+ d:\gnat\2016\i686-pc-mingw32\include\nb30.h \
+ d:\gnat\2016\i686-pc-mingw32\include\rpc.h \
+ d:\gnat\2016\i686-pc-mingw32\include\rpcdce.h \
+ d:\gnat\2016\i686-pc-mingw32\include\rpcdcep.h \
+ d:\gnat\2016\i686-pc-mingw32\include\rpcnsi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\rpcnterr.h \
+ d:\gnat\2016\i686-pc-mingw32\include\rpcasync.h \
+ d:\gnat\2016\i686-pc-mingw32\include\shellapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\winperf.h \
+ d:\gnat\2016\i686-pc-mingw32\include\winsock.h \
+ d:\gnat\2016\i686-pc-mingw32\include\wincrypt.h \
+ d:\gnat\2016\i686-pc-mingw32\include\bcrypt.h \
+ d:\gnat\2016\i686-pc-mingw32\include\ncrypt.h \
+ d:\gnat\2016\i686-pc-mingw32\include\winefs.h \
+ d:\gnat\2016\i686-pc-mingw32\include\winscard.h \
+ d:\gnat\2016\i686-pc-mingw32\include\wtypes.h \
+ d:\gnat\2016\i686-pc-mingw32\include\rpcndr.h \
+ d:\gnat\2016\i686-pc-mingw32\include\rpcnsip.h \
+ d:\gnat\2016\i686-pc-mingw32\include\rpcsal.h \
+ d:\gnat\2016\i686-pc-mingw32\include\ole2.h \
+ d:\gnat\2016\i686-pc-mingw32\include\objbase.h \
+ d:\gnat\2016\i686-pc-mingw32\include\combaseapi.h \
+ d:\gnat\2016\i686-pc-mingw32\include\wtypesbase.h \
+ d:\gnat\2016\i686-pc-mingw32\include\unknwnbase.h \
+ d:\gnat\2016\i686-pc-mingw32\include\objidlbase.h \
+ d:\gnat\2016\i686-pc-mingw32\include\cguid.h \
+ d:\gnat\2016\i686-pc-mingw32\include\objidl.h \
+ d:\gnat\2016\i686-pc-mingw32\include\unknwn.h \
+ d:\gnat\2016\i686-pc-mingw32\include\urlmon.h \
+ d:\gnat\2016\i686-pc-mingw32\include\oleidl.h \
+ d:\gnat\2016\i686-pc-mingw32\include\servprov.h \
+ d:\gnat\2016\i686-pc-mingw32\include\msxml.h \
+ d:\gnat\2016\i686-pc-mingw32\include\oaidl.h \
+ d:\gnat\2016\i686-pc-mingw32\include\propidl.h \
+ d:\gnat\2016\i686-pc-mingw32\include\oleauto.h \
+ d:\gnat\2016\i686-pc-mingw32\include\winioctl.h \
+ d:\gnat\2016\i686-pc-mingw32\include\winsmcrd.h \
+ d:\gnat\2016\i686-pc-mingw32\include\winspool.h \
+ d:\gnat\2016\i686-pc-mingw32\include\prsht.h \
+ d:\gnat\2016\i686-pc-mingw32\include\commdlg.h \
+ d:\gnat\2016\i686-pc-mingw32\include\stralign.h \
+ d:\gnat\2016\i686-pc-mingw32\include\sec_api\stralign_s.h \
+ d:\gnat\2016\i686-pc-mingw32\include\winsvc.h \
+ d:\gnat\2016\i686-pc-mingw32\include\mcx.h \
+ d:\gnat\2016\i686-pc-mingw32\include\imm.h \
+ d:\gnat\2016\i686-pc-mingw32\include\psdk_inc\_ws1_undef.h \
+ d:\gnat\2016\i686-pc-mingw32\include\_timeval.h \
+ d:\gnat\2016\i686-pc-mingw32\include\_bsd_types.h \
+ d:\gnat\2016\i686-pc-mingw32\include\inaddr.h \
+ d:\gnat\2016\i686-pc-mingw32\include\psdk_inc\_socket_types.h \
+ d:\gnat\2016\i686-pc-mingw32\include\psdk_inc\_fd_types.h \
+ d:\gnat\2016\i686-pc-mingw32\include\psdk_inc\_ip_types.h \
+ d:\gnat\2016\i686-pc-mingw32\include\psdk_inc\_wsadata.h \
+ d:\gnat\2016\i686-pc-mingw32\include\ws2def.h \
+ d:\gnat\2016\i686-pc-mingw32\include\psdk_inc\_wsa_errnos.h \
+ d:\gnat\2016\i686-pc-mingw32\include\qos.h ../src/modbus-rtu.h \
+ unit-test.h d:\gnat\2016\i686-pc-mingw32\include\inttypes.h
+
+../config.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\stdio.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\crtdefs.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\_mingw.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\_mingw_mac.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\_mingw_secapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\vadefs.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\sdks/_mingw_directx.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\sdks/_mingw_ddk.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\_mingw_print_push.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\_mingw_off_t.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\swprintf.inl:
+
+d:\gnat\2016\i686-pc-mingw32\include\sec_api\stdio_s.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\_mingw_print_pop.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\unistd.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\io.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\string.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\sec_api\string_s.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\sec_api\io_s.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\process.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\sys\types.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\getopt.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\pthread_unistd.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\stdlib.h:
+
+d:\gnat\2016\lib\gcc\i686-pc-mingw32\4.9.4\include-fixed\limits.h:
+
+d:\gnat\2016\lib\gcc\i686-pc-mingw32\4.9.4\include-fixed\syslimits.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\limits.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\sec_api\stdlib_s.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\malloc.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\errno.h:
+
+../src/modbus.h:
+
+d:\gnat\2016\lib\gcc\i686-pc-mingw32\4.9.4\include\stdint.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\stdint.h:
+
+d:\gnat\2016\lib\gcc\i686-pc-mingw32\4.9.4\include\stddef.h:
+
+../src/modbus-version.h:
+
+../src/modbus-tcp.h:
+
+../src/modbus.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\winsock2.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\_mingw_unicode.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\windows.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\sdkddkver.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\excpt.h:
+
+d:\gnat\2016\lib\gcc\i686-pc-mingw32\4.9.4\include\stdarg.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\windef.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\minwindef.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\winapifamily.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\specstrings.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\sal.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\winnt.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\ctype.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\apiset.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\psdk_inc\intrin-impl.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\basetsd.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\guiddef.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\pshpack4.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\poppack.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\pshpack4.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\pshpack2.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\poppack.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\pshpack2.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\pshpack8.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\pshpack8.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\ktmtypes.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\winbase.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\apisetcconv.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\minwinbase.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\bemapiset.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\debugapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\errhandlingapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\fibersapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\fileapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\handleapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\heapapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\ioapiset.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\interlockedapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\jobapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\libloaderapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\memoryapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\namedpipeapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\namespaceapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\processenv.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\processthreadsapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\processtopologyapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\profileapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\realtimeapiset.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\securityappcontainer.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\securitybaseapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\synchapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\sysinfoapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\systemtopologyapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\threadpoolapiset.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\threadpoollegacyapiset.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\utilapiset.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\wow64apiset.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\winerror.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\fltwinerror.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\timezoneapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\wingdi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\pshpack1.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\winuser.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\tvout.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\winnls.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\datetimeapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\stringapiset.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\wincon.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\winver.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\winreg.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\reason.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\winnetwk.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\wnnc.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\virtdisk.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\cderr.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\dde.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\ddeml.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\dlgs.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\lzexpand.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\mmsystem.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\nb30.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\rpc.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\rpcdce.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\rpcdcep.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\rpcnsi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\rpcnterr.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\rpcasync.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\shellapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\winperf.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\winsock.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\wincrypt.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\bcrypt.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\ncrypt.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\winefs.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\winscard.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\wtypes.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\rpcndr.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\rpcnsip.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\rpcsal.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\ole2.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\objbase.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\combaseapi.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\wtypesbase.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\unknwnbase.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\objidlbase.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\cguid.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\objidl.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\unknwn.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\urlmon.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\oleidl.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\servprov.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\msxml.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\oaidl.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\propidl.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\oleauto.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\winioctl.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\winsmcrd.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\winspool.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\prsht.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\commdlg.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\stralign.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\sec_api\stralign_s.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\winsvc.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\mcx.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\imm.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\psdk_inc\_ws1_undef.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\_timeval.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\_bsd_types.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\inaddr.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\psdk_inc\_socket_types.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\psdk_inc\_fd_types.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\psdk_inc\_ip_types.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\psdk_inc\_wsadata.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\ws2def.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\psdk_inc\_wsa_errnos.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\qos.h:
+
+../src/modbus-rtu.h:
+
+unit-test.h:
+
+d:\gnat\2016\i686-pc-mingw32\include\inttypes.h:

@@ -1,0 +1,37 @@
+------------------------------------------------------------------------------
+--                                ReflexAda                                 --
+--                                                                          --
+--                    Copyright (C) 2012-2017, Artics                       --
+--                                                                          --
+--  This library is free software; you can redistribute it and/or modify    --
+--  it under the terms of the GNU General Public License as published by    --
+--  the Free Software Foundation; either version 2 of the License, or (at   --
+--  your option) any later version.                                         --
+--                                                                          --
+--  This library is distributed in the hope that it will be useful, but     --
+--  WITHOUT ANY WARRANTY; without even the implied warranty of              --
+--  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU       --
+--  General Public License for more details.                                --
+--                                                                          --
+--  You should have received a copy of the GNU General Public License       --
+--  along with this library; if not, write to the Free Software Foundation, --
+--  Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.          --
+------------------------------------------------------------------------------
+
+--  This is the project file used to develop the reflexAda binding
+
+Library project Erxrt_Shared is
+
+   for Languages use ("Ada"); --, "C");
+
+   Lib_path := "../lib/release/relocatable";
+
+   for Object_Dir use lib_path & "/obj";
+
+   for Library_Dir use Lib_path;
+   for Library_Name use "rxrt";
+   for Library_Kind use "dynamic";
+
+   for Externally_Built use "True";
+
+end Erxrt_Shared;

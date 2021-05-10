@@ -1,0 +1,30 @@
+
+with "../../reflex/emu/gpr/erxrt_shared";
+
+project Build_Rxrt is
+	
+   Test_Path :=
+        ("../..",
+         "../src",
+         "../main"
+	 );
+	 
+
+   Test_Options := ("-gnat2012");
+
+   for Source_Dirs use Test_Path;
+
+   for Object_Dir use "../obj";
+   for Exec_Dir   use "../bin";
+   for Main       use ("build_rxrt.adb");
+
+   package Compiler is
+   	   for Default_Switches ("Ada") use Test_Options;
+   end Compiler;
+
+   package Naming is
+      for Casing use "lowercase";
+   end Naming;
+
+end Build_Rxrt;
+

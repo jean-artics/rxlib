@@ -1,0 +1,12 @@
+
+project Libmodbus is
+
+   for Languages use ("C");
+   for Library_Name use "modbus";
+   for Library_Kind use "dynamic";
+   for Externally_Built use "True";
+
+   for Library_Dir use "../lib/libmodbus/lib";
+
+end Libmodbus;
+
